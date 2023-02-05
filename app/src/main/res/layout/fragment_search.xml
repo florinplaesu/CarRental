@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Search for a car"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Choose location"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5A66A6"
+        android:minHeight="48dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/from_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="20sp" />
+
+
+
+    <Button
+        android:id="@+id/btn_from_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a date" />
+
+    <TextView
+        android:id="@+id/until_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Until"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_until_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a date" />
+
+    <Button
+        android:id="@+id/searchCars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:id="@+id/search"/>
+    <item android:title="Bookings"
+        android:icon="@drawable/ic_baseline_content_paste_24"
+        android:id="@+id/bookings" />
+    <item android:title="Account"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:id="@+id/account"/>
+</menu>
