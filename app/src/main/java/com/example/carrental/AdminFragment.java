@@ -13,6 +13,7 @@ import android.widget.Button;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.carrental.Car.AddCarFragment;
 import com.example.carrental.Car.CarsFragment;
 
 public class AdminFragment extends Fragment implements View.OnClickListener {
@@ -53,7 +54,7 @@ public class AdminFragment extends Fragment implements View.OnClickListener {
         }
     }
     private void openLocationsFragment() {
-        LocationsFragment locationsFragment = new LocationsFragment();
+        AddLocationFragment locationsFragment = new AddLocationFragment();
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout, locationsFragment);
@@ -61,8 +62,8 @@ public class AdminFragment extends Fragment implements View.OnClickListener {
         fragmentTransaction.commit();
     }
     private void openCarsFragment() {
-        // Replace with your CarsFragment class
-        CarsFragment carsFragment = new CarsFragment();
+
+        AddCarFragment carsFragment = new AddCarFragment();
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout, carsFragment);
@@ -71,7 +72,7 @@ public class AdminFragment extends Fragment implements View.OnClickListener {
     }
 
     private void openUsersFragment() {
-        // Replace with your UsersFragment class
+
         UsersFragment usersFragment = new UsersFragment();
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

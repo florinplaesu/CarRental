@@ -55,22 +55,6 @@ public class CarListFragment extends Fragment {
         cars.add(new Car("ford","focus",25,"Horsens"));
         cars.add(new Car("ford","focus",25,"Bucuresti"));
 
-        /*DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("cars");
-        ValueEventListener valueEventListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                    Car car = ds.getValue(Car.class);
-                    cars.add(car);
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.d("TAG", databaseError.getMessage());
-            }
-        };
-        databaseReference.addValueEventListener(valueEventListener);*/
         carAdapter= new CarAdapter(cars);
 
         carAdapter.setOnClickListener(car -> {
@@ -103,14 +87,5 @@ public class CarListFragment extends Fragment {
         });*/
         return view;
     }
-/*
-
-    @Override
-    public void onStart() {
-        super.onStart();
-
-
-    }
-*/
 
 }

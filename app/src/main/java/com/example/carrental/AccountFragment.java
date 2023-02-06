@@ -72,7 +72,7 @@ public class AccountFragment extends Fragment {
                                     // to add condition if user is admin or not, different privileges
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(getActivity(), "Sign in successful", Toast.LENGTH_SHORT).show();
-                                    Fragment newFragment = new AddLocationFragment();
+                                    Fragment newFragment = new AdminFragment();
                                     FragmentTransaction transaction = getFragmentManager().beginTransaction();
                                     transaction.replace(R.id.frameLayout, newFragment);
                                     transaction.addToBackStack(null);
@@ -80,8 +80,8 @@ public class AccountFragment extends Fragment {
 
                                 } else {
                                     // If sign in fails, display a message to the user.
-                                    Toast.makeText(getActivity(), "Sign in failed.", Toast.LENGTH_SHORT).show();
 
+                                    Toast.makeText(getActivity(), "Sign in failed.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

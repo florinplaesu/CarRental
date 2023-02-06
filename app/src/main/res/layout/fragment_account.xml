@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="68dp"
-        android:text="Welcome! Please sign in!!!!!!!"
+        android:text="Welcome! Please sign in!"
         android:textSize="26dp" />
 
     <EditText
