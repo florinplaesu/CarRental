@@ -11,4 +11,4 @@ The following user stories were at the start of the project :
 - [ ] As an administrator I want to be able to add a location so that our clients know from where to pick the car.
 - [ ] As an administrator I want to be able to sign in/ register 
 - [ ] As a client I want to see the cars provided by the company, so that I can choose accordingly.
-- [ ] As a client I want to be able to rent a car so that  
+- [ ] As a client I want to be able to rent a car 
